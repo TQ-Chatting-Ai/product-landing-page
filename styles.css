@@ -48,7 +48,7 @@
   }
   
   header {
-    position: fixed;
+    position: static;
     top: 0;
     min-height: 75px;
     padding: 0px 20px;
@@ -66,12 +66,12 @@
   .logo > img {
     width: 100%;
     height: 100%;
-    max-width: 300px;
+    max-width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 20px;
+    margin-left: 10px 0 10px 20px;
   }
   
   img {
@@ -114,9 +114,7 @@
   }
   
   .container {
-    max-width: 1000px;
     width: 100%;
-    margin: 0 auto;
   }
   
   #hero {
@@ -126,7 +124,7 @@
     justify-content: center;
     text-align: center;
     height: 200px;
-    margin-top: 50px;
+    margin: 13rem 0;
   }
   
   section {
@@ -208,7 +206,7 @@
   }
   
   #features {
-    margin-top: 30px;
+    margin-left: 1rem;
   }
   
   .grid {
@@ -267,10 +265,23 @@
   }
   
   #how-it-works {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
+    margin-left: 50px;
   }
+
+  .container2 {
+    display: flex;
+    max-width: 1500px;
+    justify-content: space-between; 
+    gap: 50px; 
+    margin: 11rem auto;
+  }
+  
+  .box {
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+  }
+  
   
   #how-it-works > iframe {
     max-width: 560px;
@@ -294,8 +305,13 @@
     border-image: initial;
   }
   
+  .container3 {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+
   #pricing {
-    margin-top: 60px;
+    margin: 9rem 0 11rem 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -407,6 +423,14 @@
   @media (max-width: 600px) {
     header {
       flex-wrap: wrap;
+    }
+    .container2 {
+      flex-direction: column; /* Ubah jadi vertikal */
+      align-items: center; /* Tengahin konten */
+    }
+  
+    .box {
+      width: 100%; /* Biar full width */
     }
   }
   
